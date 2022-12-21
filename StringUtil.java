@@ -1,7 +1,9 @@
 class StringUtil{
 
 
-
+/**
+string representing numbers till the input value provided in argument
+**/
    String numbersString(int val){
    
    StringBuffer result=new StringBuffer();
@@ -17,8 +19,37 @@ class StringUtil{
    
    
    }
+   
+  
+   
+   
+/**
+Find all the vowels in string and convert into ‘b’ in all the vowels and should return a StringBuilder.
 
+  hello
+  01234
 
+**/
+  StringBuilder convertTo(String input){
+  StringBuilder builder=new StringBuilder();
+  for(int index=0; index<input.length();index++){
+      char ch=input.charAt(index);
+      char converted= convertChar(ch);
+      builder.append(converted); 
+  
+  }
+  return builder;
+  
+  }
+
+   char convertChar(char input){   
+    char small =Character.toLowerCase(input);
+   if(small=='a' || small=='e' || small=='i' || small=='o' || small=='u'){
+       return 'b';      
+      }
+      return input;       
+       
+   }
 
 
 }

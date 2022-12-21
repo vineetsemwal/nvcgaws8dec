@@ -19,7 +19,6 @@ uniqueConsonants(String input)
 
 
 
-
 //4156789657893
 
 //length should be 13 or 16
