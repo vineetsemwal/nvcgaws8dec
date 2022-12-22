@@ -1,0 +1,90 @@
+
+class Car {
+
+String vehicleNumber
+
+ String speed
+
+}
+
+class CarService {
+/*
+
+if speed is between 20 and  90 set the speed and return the set speed 
+
+throw SpeedInvalidException if speed is smaller than 20 or greater than 90, Catch the exception  and return message "Invalid Speed"
+
+
+*/
+    public String assignCarSpeed(Car car, int speed) 
+
+}
+
+class InvalidSpeedException extends Exception {
+    public InvalidSpeedException(String msg) {
+        super(msg);
+    }
+
+}
+
+
+CarSpeedMain{
+
+ public static void main(String args[]){
+ Car car=new Car();
+ CarService service=new CarService();
+ 
+ verify for various use cases
+//   service.assignCarspeed(car, 80);
+
+ }
+
+}
+
+
+
+
+
+
+Q2)
+class Parcel{
+
+source,destination:String;
+
+netWeightInKg,totalWeightInKg:int;
+
+//create appropriate constructor for src, destination, netWeightInKg,totalWeightInKg
+
+}
+
+class ParcelService:
+
+throws SamePlaceException when source and destination is same
+
+If netweight is greater than 50 throw WeightException
+If netweight is greater than totalweight throw WeightException
+
+void validateParcel(Parcel parcel) throws  SamePlaceException, WeightException
+
+// first validate parcel and if successful then return the bill value, Rs 10 for 1 kg net weight
+//catch the exception, return -1 for the bill in case there is exception
+double totalBill(Parcel parcel) 
+
+class SamePlaceException extends Exception:
+
+class WeightException extends Exception:
+
+
+ ParcelMain{
+ 
+ public static void main(String args[]){
+ 
+Parcel parcel = new Parcel("Delhi","Mumbai",20,21);
+
+ParcelService service = new ParcelService();
+double bill=service.totalBill(parcel);
+
+//print bill here
+}
+
+}

@@ -1,3 +1,6 @@
+import java.util.*;
+
+
 class StringUtil{
 
 
@@ -52,4 +55,39 @@ Find all the vowels in string and convert into ‘b’ in all the vowels and sho
    }
 
 
+//Check if the string is an panagram ie. Contains all 26 alphabets 
+
+boolean  isPanagram(String input)
+{
+
+   String letters="";
+   for(int i=0;i<input.length();i++){
+   char ch=input.charAt(i);
+   boolean isLetter=isLetter(ch);
+   if(!letters.contains(ch)){
+   letters.add(ch);     
+   }
+   
+   }
+   boolean result=letters.length()==26;
+   return result;
+   
+ }
+
+   boolean isLetter(char ch){
+    char small =Character.toLowerCase(ch);
+    boolean result=(small>='a' && small<='z');
+    return result;
+   }
+
 }
+
+
+
+}
+
+
+
+
+
+
