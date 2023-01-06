@@ -17,6 +17,9 @@ boolean  isPanagram(String input)
 uniqueConsonants(String input)
 
 
+// example input "Arpit.MehtaID123456DTIT80L" Employee class below
+
+ Employee createEmployee(input)
 
 
 //4156789657893
@@ -30,7 +33,34 @@ uniqueConsonants(String input)
 then last 3 digits will be numbers (2-6)
 public boolean validateCreditCard(String input)
 
+  
+
 }
+
+//create getters/setters
+Employee{
+id:String
+firstName:String
+lastName:String
+dept: String
+salary:long
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
